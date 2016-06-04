@@ -1,25 +1,16 @@
-# ReduxSimpleStarter
+# GrooveTube
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+###Description###
 
-###Getting Started###
+GrooveTube is a work-in-process Youtube clone, using the Youtube API to search for terms and display a video player and related videos created with React Components.
 
-There are two methods for getting started with this repo.
+Using dynamic react components, this app is able to update the page upon user input without a submit button or clicking enter, and using Lodash is able to throttle the API call so a new search does not occur on every single character typed.
 
-####Familiar with Git?#####
-Checkout this repo, install dependencies, then start the gulp process with the following:
+Clicking on a related video will display that video in the media player.
 
-```
-	> git clone git@github.com:StephenGrider/ReduxSimpleStarter.git
-	> cd ReduxSimpleStarter
-	> npm install
-	> npm start
-```
+###Currently Working On###
 
-####Not Familiar with Git?#####
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
+Adding functionality to rerender related videos component when one is selected from the options.
 
-```
-	> npm install
-	> npm start
-```
+###Tech###
+Node.js, React, Lodash, Babel (to compile ES6), Bootstrap for styling
