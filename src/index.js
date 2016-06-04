@@ -8,7 +8,12 @@ const API_KEY = "AIzaSyDxDSX_ofdJVSkdSm2XZuo6NNgUZluXQ6c";
 
 // create a new component
 const App = () => {
-    return <div>GrooveTube</div>;
+    return (
+      <div>
+        <h1>GrooveTube</h1>
+        <SearchBar />
+      </div>
+    );
 }
 
 
