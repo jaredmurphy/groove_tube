@@ -16,7 +16,7 @@ class App extends Component {
       };
 
       YTSearch({key: API_KEY, term: 'higher order functions'}, (videos) => {
-        this.setState({ 
+        this.setState({
           videos: videos,
           selectedVideo: videos[0]
         });
@@ -29,7 +29,10 @@ class App extends Component {
           <h1>GrooveTube</h1>
           <SearchBar />
           <VideoDetail video={this.state.selectedVideo} />
-          <VideoList videos={this.state.videos} />
+          <VideoList
+            onVideoSelect={selectedVideo => this.setState({selectedVideo}) }
+            videos={this.state.videos} />
+
         </div>
       );
     }
