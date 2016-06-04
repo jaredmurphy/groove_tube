@@ -9,6 +9,12 @@ YTSearch({key: API_KEY, term: 'higher order functions'}, function(data){
 });
 
 class App extends Component {
+    constructor(props) {
+      super(props);
+
+      this.state = { };
+    }
+    
     render() {
       return (
         <div>
