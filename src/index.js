@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Component } from 'react';
+
+const API_KEY = "AIzaSyDxDSX_ofdJVSkdSm2XZuo6NNgUZluXQ6c";
+//import { Component } from 'react';
 
 
 // create a new component
-const App = function() {
+const App = () => {
     return <div>GrooveTube</div>;
 }
 
