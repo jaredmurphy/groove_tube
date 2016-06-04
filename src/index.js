@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import YTSearch from 'youtube-api-search';
 import SearchBar from './components/search_bar';
+import VideoList from './components/video_list';
 const API_KEY = "AIzaSyDxDSX_ofdJVSkdSm2XZuo6NNgUZluXQ6c";
 
 class App extends Component {
@@ -12,7 +13,6 @@ class App extends Component {
 
       YTSearch({key: API_KEY, term: 'higher order functions'}, (videos) => {
         this.setState({ videos });
-        // this.setState({ videos: videos })
       });
     }
 
@@ -21,6 +21,7 @@ class App extends Component {
         <div>
           <h1>GrooveTube</h1>
           <SearchBar />
+          <VideoList videos={this.state.videos} />
         </div>
       );
     }
